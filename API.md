@@ -56,17 +56,27 @@ const easeInOutCubic= easeInOut(3);
 easeInOutCubic(.3); //0.108
 ```
 
+\* For more examples, please review some of the [implementated functions](src/implementation/index.ts)
+
 Here's a quick [primer](https://developers.google.com/web/fundamentals/design-and-ux/animations/the-basics-of-easing)
 
 
 #### scrollTo
 ```
-import {scrollTo} from "scrollio";
+import {scrollTo, easeInOutQuint} from "scrollio";
 
+const element = document.body; // a scrollable HTML element
+const to = 1000; // desired destination of scrolling
+const duration = 1200; // duration of the scroll
+const easingFunction = easeInOutQuint; //one that's provided by the library, or your own.
+
+scrollTo(element, to, duration, easingFunction).then(() => {
+  console.log("finito!")
+});
+
+export declare function scrollTo(scrollElement: Element, to: number, duration: number, easingFunction: EasingFunction): Promise<void>;
 
 ```
-
-
 #### Easing presets to be used inside the class initializer
 "linear" | "easeInQuad" | "easeOutQuad" | "easeInOutQuad" | "easeInCubic" | "easeOutCubic" | "easeInOutCubic" | "easeInQuart" | "easeOutQuart" | "easeInOutQuart" | "easeInQuint" | "easeOutQuint" | "easeInOutQuint"
 
@@ -82,7 +92,7 @@ interface Options {
 ```
 
 ### Easing Functions
-Scrollio exposes its entire easeing function implementation so that they can be used outside of the library.
+Scrollio exposes its entire easeing function implementation so that they can be used outside of the library, have a look [here](src/implementation/index.ts).
 
 
 

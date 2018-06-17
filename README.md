@@ -4,9 +4,11 @@ Scrollio was designed to be a slim yet extensible smooth scrolling solution.
 
 It aims to solve one thing, and one thing only:
 
-creating a jank-free smooth scroll which can be controlled by either one of the provided easing functions, 
+creating a jank-free smooth scroll which can be controlled by either one of the provided easing functions, or by user-provided a custom one.
 
-or by user-provided a custom one.
+## Why is it headless?
+Scrollio exposes its entire internal API in order for you to use in your own solution.
+It comes with a usable [example](src/scrollTo.ts) function in order to provide a possible solution, yet the use of it is not mandatory.
 
 ## Getting Started
 
