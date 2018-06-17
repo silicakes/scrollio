@@ -14,7 +14,7 @@ It comes with a usable [example](src/scrollTo.ts) function in order to provide a
 
 ```
 # Get scrollio from npm
-npm i scrollio
+npm i scrollio-js
 
 # Import either Scrollio or one of its subset functions
 import {Scrollio} from "scrollio";

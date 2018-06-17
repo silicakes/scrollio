@@ -1,5 +1,5 @@
 {
-  "name": "scrollio",
+  "name": "scrollio-js",
   "version": "0.1.0",
   "description": "A headless scrolling library",
   "main": "dist/main",
