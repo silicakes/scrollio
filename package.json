@@ -1,6 +1,6 @@
 {
   "name": "scrollio-js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A headless scrolling library",
   "main": "dist/main",
   "module": "src/index.ts",
