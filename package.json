@@ -10,6 +10,10 @@
     "dist/**/*.d.ts",
     "dist/**/*.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silicakes/scrollio.git"
+  },
   "types": "dist/lib/index.d.ts",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --mode development",
