@@ -5,7 +5,7 @@
 ### initialization
 ```
 //import
-import { Scrollio } from "scrollio";
+import { Scrollio } from "scrollio-js";
 
 //initialization
 const scroll = new Scrollio({
@@ -38,12 +38,12 @@ With that in mind, here's the internal API:
 
 #### easeIn / easeOut / easeInOut abstractions
 ```
-import { easeIn, easeOut, easeInOut} from "scrollio";
+import { easeIn, easeOut, easeInOut} from "scrollio-js";
 ```
 Returns an easing **function**.
 
 These easing functions receive a 'power' value which creates the dimension of the function.
-In the most basic form, it's the building block of all of scrollios' easing presets:
+In the most basic form, it's the building block of all of scrollio-jss' easing presets:
 
 ```
 const easeOutQuad = easeOut(2); 
@@ -63,7 +63,7 @@ Here's a quick [primer](https://developers.google.com/web/fundamentals/design-an
 
 #### scrollTo
 ```
-import {scrollTo, easeInOutQuint} from "scrollio";
+import {scrollTo, easeInOutQuint} from "scrollio-js";
 
 const element = document.body; // a scrollable HTML element
 const to = 1000; // desired destination of scrolling
