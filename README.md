@@ -48,11 +48,6 @@ git clone https://github.com/silicakes/scrollio.git
 +      "target": "ES5",
 ```
 
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [Typescript](https://www.typescriptlang.org/) - TypeScript is a superset of JavaScript that compiles to clean JavaScript output. 
