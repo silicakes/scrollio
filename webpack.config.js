@@ -4,7 +4,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.ts",
+  entry: {
+    main: "./src/index.ts",
+    mockText: "./mock_text.ts"
+},
   output: {
     filename: "[name].js",
     path: `${__dirname}/dist`,
