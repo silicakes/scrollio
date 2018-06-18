@@ -7,14 +7,14 @@
 [![build: passing](https://img.shields.io/badge/'build'-passing-brightgreen.svg)](https://www.npmjs.com/package/scrollio-js)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-Scrollio was designed to be a slim yet extensible smooth scrolling solution.
+Scrollio is a slim yet extensible smooth scrolling solution.
 
 It aims to solve one thing, and one thing only:
 
-creating a jank-free smooth scroll which can be controlled by either one of the provided easing functions, or by user-provided a custom one.
+creating a jank-free smooth scroll which can be controlled by either one of the provided easing functions, or by a user-provided one.
 
 ## Why is it headless?
-Scrollio exposes its entire internal API in order for you to use in your own solution.
+Scrollio exposes its entire internal API to be used in your own project.
 It comes with a usable [example](src/scrollTo.ts) function in order to provide a possible solution, yet the use of it is not mandatory.
 
 ## Getting Started
