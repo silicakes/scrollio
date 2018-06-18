@@ -37,11 +37,11 @@ Please refer to [API.md](API.md)
 
 ### Prerequisites
 
-Mke sure your target browsers support es6, otherwise:
+Make sure your target browsers support es6, otherwise:
 
 ```
 # Manually clone the project
-git clone
+git clone https://github.com/silicakes/scrollio.git
 
 # Change tsconfig.jsons' target entry
 -      "target": "ES6",
