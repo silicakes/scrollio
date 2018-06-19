@@ -5,9 +5,8 @@
   "main": "dist/main",
   "module": "src/index.ts",
   "files": [
-    "dist/**/*.js",
-    "!dist/**/*demo*",
-    "dist/**/*.js.map",
+    "dist/**/main.js",
+    "dist/**/main.js.map",
     "dist/**/*.d.ts",
     "dist/**/*.md"
   ],
