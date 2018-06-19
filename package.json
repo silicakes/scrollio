@@ -6,6 +6,7 @@
   "module": "src/index.ts",
   "files": [
     "dist/**/*.js",
+    "!dist/**/*demo*",
     "dist/**/*.js.map",
     "dist/**/*.d.ts",
     "dist/**/*.md"

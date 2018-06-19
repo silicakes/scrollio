@@ -6,7 +6,7 @@ const webpack = require("webpack");
 module.exports = {
   entry: {
     main: "./src/index.ts",
-    mockText: "./mock_text.ts"
+    demo: "./demo.ts"
 },
   output: {
     filename: "[name].js",
@@ -14,7 +14,7 @@ module.exports = {
     libraryTarget: "umd",
     library: "scrollio",
     umdNamedDefine: true,
-    publicPath: "/"
+    publicPath: "/",
   },
   devtool: "source-map",
   resolve: {
