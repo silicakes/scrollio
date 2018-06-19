@@ -60,6 +60,11 @@ git clone https://github.com/silicakes/scrollio.git
 # Change tsconfig.jsons' target entry
 -      "target": "ES6",
 +      "target": "ES5",
+
+# build the project
+npm run build
+
+#use main.js with your solution.
 ```
 
 ## Built With
@@ -72,7 +77,7 @@ Just send a PR, no fancy rules here.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/silicakes/scrollio/tags). 
 
 ## Authors
 
@@ -90,6 +95,7 @@ Big thanks for [yukulele](https://github.com/yukulele) and [gre](https://github.
 
 
 ### TODOS
+- Demos: Comming soon! I promise()!
 - Support x position scrolling (breaking change)
 - Add an onScroll event (currently polyfillable with `scrollElement.addEventListener("scroll", () => {...})`), consider using ReadableStream (similar to the fetch API)
 - Add testing
