@@ -26,10 +26,13 @@ export function scrollTo(scrollElement: Element, to: number, duration: number, e
     increment = 20;
   const reqAnimation = requestAnimFrame();
   return new Promise<void>(resolve => {
+    if(start === to) {
+      resolve();
+    }
     let animateScroll = function() {
       currentTime += increment;
       let val = easingFunction(currentTime / duration) * (to - start) + start;
-      console.log(val);
+      // console.log(val);
       move(scrollElement, val);
       if (currentTime < duration) {
         reqAnimation(animateScroll);
