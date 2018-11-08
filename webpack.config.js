@@ -9,6 +9,7 @@ module.exports = {
     demo: "./demo.ts"
 },
   output: {
+    globalObject: 'this',
     filename: "[name].js",
     path: `${__dirname}/dist`,
     libraryTarget: "umd",
