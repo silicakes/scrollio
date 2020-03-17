@@ -26,10 +26,13 @@ It comes with a usable [example](src/scrollTo.ts) function in order to provide a
 
 ## Getting Started
 
-```
+```sh
 # Get scrollio from npm
 npm i scrollio-js
 
+```
+
+```ts
 # Import either Scrollio or one of its subset functions
 import {Scrollio} from "scrollio-js";
 
@@ -53,7 +56,7 @@ Please refer to [API.md](API.md)
 
 Make sure your target browsers support es6, otherwise:
 
-```
+```sh
 # Manually clone the project
 git clone https://github.com/silicakes/scrollio.git
 
