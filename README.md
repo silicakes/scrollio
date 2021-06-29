@@ -4,7 +4,7 @@
 [![scrollio version](https://img.shields.io/badge/dynamic/json.svg?label=version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsilicakes%2Fscrollio%2Fmaster%2Fpackage.json&query=version)](https://www.npmjs.com/package/scrollio-js)
 [![license: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://www.npmjs.com/package/scrollio-js)
 
-[![Typescript version](https://img.shields.io/badge/Typescript-2.9-blue.svg)](https://www.npmjs.com/package/scrollio-js)
+[![Typescript version](https://img.shields.io/badge/Typescript-4.3-blue.svg)](https://www.npmjs.com/package/scrollio-js)
 [![npm Version](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/scrollio-js)
 [![build: passing](https://img.shields.io/badge/'build'-passing-brightgreen.svg)](https://www.npmjs.com/package/scrollio-js)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
