@@ -1,15 +1,15 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
   entry: {
     main: "./src/index.ts",
-    demo: "./demo.ts"
-},
+    demo: "./demo.ts",
+  },
   output: {
-    globalObject: 'this',
+    globalObject: "this",
     filename: "[name].js",
     path: `${__dirname}/dist`,
     libraryTarget: "umd",
@@ -20,15 +20,14 @@ module.exports = {
   devtool: "source-map",
   resolve: {
     extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"],
-    alias: {
-    }
+    alias: {},
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
-      title: "Scrollio"
+      title: "Scrollio",
     }),
-    new CopyWebpackPlugin([ {from: `${__dirname}/*.md`} ])
+    new CopyWebpackPlugin({ patterns: [{ from: `${__dirname}/*.md` }] }),
   ],
   module: {
     rules: [
@@ -36,16 +35,16 @@ module.exports = {
         enforce: "pre",
         test: /\.js$/,
         loader: "source-map-loader",
-        exclude: [/node_modules.*/]
+        exclude: [/node_modules.*/],
       },
       {
         test: /\.ts$/,
-        loader: "ts-loader"
-      }
-    ]
+        loader: "ts-loader",
+      },
+    ],
   },
   devServer: {
     historyApiFallback: true,
-    host: "0.0.0.0"
-  }
+    host: "0.0.0.0",
+  },
 };

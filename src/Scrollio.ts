@@ -1,6 +1,6 @@
 import { easingFunctions, DefaultEasingFunction } from "./implementation";
 import { EasingFunction } from "./abstraction";
-import {scrollTo} from "./scrollTo";
+import { scrollTo } from "./scrollTo";
 
 export interface Options {
   scrollElement: Element;
@@ -9,9 +9,9 @@ export interface Options {
 }
 
 export class Scrollio {
-  private easingFunction: EasingFunction;
-  private scrollElement: Element;
-  private duration: number;
+  private easingFunction: EasingFunction = easingFunctions["easeInOutQuad"];
+  private scrollElement!: Element;
+  private duration: number = 800;
 
   constructor(options: Options) {
     const { easingFunction, scrollElement, duration } = options;
@@ -33,9 +33,10 @@ export class Scrollio {
   getDuration = () => this.duration;
   setDuration = (duration: number) => {
     this.duration = duration;
-  }
+  };
 
   scrollTo = (to: number) => {
-   return scrollTo(this.scrollElement, to, this.duration, this.easingFunction)
-  }
+    return scrollTo(this.scrollElement, to, this.duration, this.easingFunction);
+  };
 }
+

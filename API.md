@@ -3,21 +3,21 @@
 ## Scrollio class
 
 ### initialization
-```
+```ts
 //import
 import { Scrollio } from "scrollio-js";
 
 //initialization
 const scroll = new Scrollio({
   scrollElement: document.body, //A scrollable HTML Element
-  easingFunction: "easeInOutQuad", // easing preset or your own
-  duration: 400 // the time(ms) it should take for the transition to finish
+  easingFunction: "easeInOutQuad", // Optional: easing preset or your own - default: easeInOUtQuad
+  duration: 400 // Optional: the time it  should take for the transition to finish in ms - default: 800
 });
 ```
 
 ### Public methods
 
-```
+```ts
 scroll.getEasingFunction() // function() {...}
 scroll.setEasingFunction(preset|function) // will set a new easing function from a preset or as the provided function
 
@@ -37,7 +37,7 @@ Part of Scrollios philosophy is to provide the building blocks necessary to crea
 With that in mind, here's the internal API:
 
 #### easeIn / easeOut / easeInOut abstractions
-```
+```ts
 import { easeIn, easeOut, easeInOut} from "scrollio-js";
 ```
 Returns an easing **function**.
@@ -45,14 +45,14 @@ Returns an easing **function**.
 These easing functions receive a 'power' value which creates the dimension of the function.
 In the most basic form, it's the building block of all of scrollio-jss' easing presets:
 
-```
+```ts
 const easeOutQuad = easeOut(2); 
 const easeInOutCubic= easeInOut(3);
 ```
 
 `easeOutQuad` and `easeInOutCubic` are functions accepting a 0-1 value:
 
-```
+```ts
 easeInOutCubic(.3); //0.108
 ```
 
@@ -62,7 +62,7 @@ Here's a quick [primer](https://developers.google.com/web/fundamentals/design-an
 
 
 #### scrollTo
-```
+```ts
 import {scrollTo, easeInOutQuint} from "scrollio-js";
 
 const element = document.body; // a scrollable HTML element
@@ -83,7 +83,7 @@ export declare function scrollTo(scrollElement: Element, to: number, duration: n
 
 ### class options
 
-```
+```ts
 interface Options {
     scrollElement: Element;
     easingFunction: DefaultEasingFunction | EasingFunction;

@@ -1,15 +1,16 @@
 {
-    "compilerOptions": {
-      "allowSyntheticDefaultImports": true,
-      "declaration": true,
-      "outDir": "lib",
-      "sourceMap": true,
-      "noImplicitAny": true,
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "target": "ES5",
-      "baseUrl": "src/",
-      "lib": ["es5", "es2015", "dom"]
-    },
-    "include": ["./src/**/*", "./typings/**/*"]
-  }
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "strict": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES5",
+    "baseUrl": "src/",
+    "lib": ["es5", "es2015", "dom"]
+  },
+  "include": ["./src/**/*", "./typings/**/*"]
+}
